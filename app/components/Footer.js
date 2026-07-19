@@ -16,7 +16,7 @@ export default function Footer() {
   const [phoneOpen, setPhoneOpen] = useState(false);
 
   return (
-    <footer className="border-t border-border px-6 py-20">
+    <footer className="border-t border-border px-6 py-14 sm:py-20">
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 font-mono text-sm sm:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <span className="text-2xl font-bold tracking-wide text-accent">hkhamis</span>

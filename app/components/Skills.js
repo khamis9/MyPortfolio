@@ -13,10 +13,10 @@ const LANGUAGES = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="mx-auto max-w-4xl px-6 py-20">
+    <section id="skills" className="mx-auto max-w-4xl px-6 py-14 sm:py-20">
       <div className="mb-10">
         <span className="font-mono text-sm text-accent-2">// skills.js</span>
-        <h2 className="mt-1 font-mono text-3xl">Skills</h2>
+        <h2 className="mt-1 font-mono text-2xl sm:text-3xl">Skills</h2>
         <p className="mt-2 text-text-muted">Languages I use across my repos</p>
       </div>
 

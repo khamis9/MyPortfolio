@@ -19,7 +19,7 @@ export default function Nav() {
     <header className="sticky top-0 z-20 flex h-14 items-center gap-6 border-b border-border bg-bg/85 px-4 backdrop-blur-md sm:px-8">
       <span className="font-mono font-bold tracking-wide text-accent">hkhamis</span>
 
-      <nav className="ml-2 hidden flex-1 gap-1 sm:flex">
+      <nav className="ml-2 hidden flex-1 gap-1 lg:flex">
         {TABS.map((t) => (
           <a
             key={t.href}
@@ -36,7 +36,7 @@ export default function Nav() {
         aria-label="Open menu"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="ml-auto flex flex-col gap-1 p-2 sm:hidden"
+        className="ml-auto flex flex-col gap-1 p-2 lg:hidden"
       >
         <span className="h-0.5 w-5 bg-text" />
         <span className="h-0.5 w-5 bg-text" />
@@ -44,7 +44,7 @@ export default function Nav() {
       </button>
 
       {open && (
-        <nav className="absolute left-0 right-0 top-14 flex flex-col gap-1 border-b border-border bg-bg p-2 sm:hidden">
+        <nav className="absolute left-0 right-0 top-14 flex flex-col gap-1 border-b border-border bg-bg p-2 lg:hidden">
           {TABS.map((t) => (
             <a
               key={t.href}

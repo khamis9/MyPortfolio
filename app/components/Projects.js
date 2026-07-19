@@ -24,10 +24,10 @@ const PROJECTS = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-4xl px-6 py-20">
+    <section id="projects" className="mx-auto max-w-4xl px-6 py-14 sm:py-20">
       <div className="mb-10">
         <span className="font-mono text-sm text-accent-2">// projects.js</span>
-        <h2 className="mt-1 font-mono text-3xl">Built &amp; shipped</h2>
+        <h2 className="mt-1 font-mono text-2xl sm:text-3xl">Built &amp; shipped</h2>
         <p className="mt-2 text-text-muted">
           A few of the ones I&apos;m proudest of. More on{" "}
           <a href="https://github.com/khamis9" target="_blank" rel="noopener" className="text-accent-2 hover:underline">

@@ -23,10 +23,10 @@ const FAQS = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="mx-auto max-w-4xl px-6 py-20">
+    <section id="faq" className="mx-auto max-w-4xl px-6 py-14 sm:py-20">
       <div className="mb-10">
         <span className="font-mono text-sm text-accent-2">// faq.js</span>
-        <h2 className="mt-1 font-mono text-3xl">Common questions</h2>
+        <h2 className="mt-1 font-mono text-2xl sm:text-3xl">Common questions</h2>
       </div>
 
       <div className="flex flex-col divide-y divide-border overflow-hidden rounded-xl border border-border bg-surface">

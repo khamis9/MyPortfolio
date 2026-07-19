@@ -2,10 +2,10 @@ import ProfilePhoto from "./ProfilePhoto";
 
 export default function About() {
   return (
-    <section id="about" className="mx-auto max-w-4xl px-6 py-20">
+    <section id="about" className="mx-auto max-w-4xl px-6 py-14 sm:py-20">
       <div className="mb-10">
         <span className="font-mono text-sm text-accent-2">// about.js</span>
-        <h2 className="mt-1 font-mono text-3xl">About</h2>
+        <h2 className="mt-1 font-mono text-2xl sm:text-3xl">About</h2>
       </div>
 
       <div className="grid grid-cols-1 items-start gap-10 sm:grid-cols-[180px_1fr]">

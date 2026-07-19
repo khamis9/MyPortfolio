@@ -21,10 +21,10 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="services" className="mx-auto max-w-4xl px-6 py-20">
+    <section id="services" className="mx-auto max-w-4xl px-6 py-14 sm:py-20">
       <div className="mb-10">
         <span className="font-mono text-sm text-accent-2">// services.js</span>
-        <h2 className="mt-1 font-mono text-3xl">What I do</h2>
+        <h2 className="mt-1 font-mono text-2xl sm:text-3xl">What I do</h2>
         <p className="mt-2 text-text-muted">
           The kinds of projects I take on, how I build them, and how we&apos;d work together.
         </p>
