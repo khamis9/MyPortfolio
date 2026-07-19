@@ -17,7 +17,10 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-20 flex h-14 items-center gap-6 border-b border-border bg-bg/85 px-4 backdrop-blur-md sm:px-8">
-      <span className="font-mono font-bold tracking-wide text-accent">hkhamis</span>
+      <span className="font-mono font-bold tracking-wide">
+        <span className="text-accent-2">&lt;</span>Kham<span className="text-accent">;</span>s
+        <span className="text-accent-2">&gt;</span>
+      </span>
 
       <nav className="ml-2 hidden flex-1 gap-1 lg:flex">
         {TABS.map((t) => (

@@ -19,7 +19,10 @@ export default function Footer() {
     <footer className="border-t border-border px-6 py-14 sm:py-20">
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 font-mono text-sm sm:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <span className="text-2xl font-bold tracking-wide text-accent">hkhamis</span>
+          <span className="text-2xl font-bold tracking-wide">
+            <span className="text-accent-2">&lt;</span>Kham<span className="text-accent">;</span>s
+            <span className="text-accent-2">&gt;</span>
+          </span>
           <p className="mt-3 max-w-[32ch] text-base text-text-muted">
             Full-stack developer, Beirut · Remote. Building things end to end.
           </p>
