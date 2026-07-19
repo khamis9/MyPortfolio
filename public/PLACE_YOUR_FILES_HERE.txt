@@ -1,0 +1,6 @@
+Put these two files in this /public folder:
+- profile.jpg  (your photo)
+- cv.pdf       (your resume)
+
+They'll then be available at yoursite.com/profile.jpg and yoursite.com/cv.pdf automatically.
+Until you add them, the photo falls back to an "HK" placeholder and the CV download link will 404.

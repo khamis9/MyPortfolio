@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+.env.local
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Claude Code local config/session files — not meant for the repo
+CLAUDE.md
+.claude/
