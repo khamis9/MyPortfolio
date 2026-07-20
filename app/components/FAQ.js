@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const FAQS = [
   {
     q: "What's your typical timeline?",
@@ -22,6 +26,8 @@ const FAQS = [
 ];
 
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState(null);
+
   return (
     <section id="faq" className="mx-auto max-w-4xl px-6 py-14 sm:py-20">
       <div className="mb-10">
@@ -30,15 +36,36 @@ export default function FAQ() {
       </div>
 
       <div className="flex flex-col divide-y divide-border overflow-hidden rounded-xl border border-border bg-surface">
-        {FAQS.map((item) => (
-          <details key={item.q} className="group p-5">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold marker:content-none">
-              {item.q}
-              <span className="shrink-0 font-mono text-accent transition-transform group-open:rotate-45">+</span>
-            </summary>
-            <p className="mt-3 text-sm text-text-muted">{item.a}</p>
-          </details>
-        ))}
+        {FAQS.map((item, i) => {
+          const isOpen = openIndex === i;
+          return (
+            <div key={item.q} className="p-5">
+              <button
+                type="button"
+                onClick={() => setOpenIndex(isOpen ? null : i)}
+                aria-expanded={isOpen}
+                className="flex w-full items-center justify-between gap-4 text-left font-semibold"
+              >
+                {item.q}
+                <span
+                  className={`shrink-0 font-mono text-accent transition-transform duration-300 ${
+                    isOpen ? "rotate-45" : ""
+                  }`}
+                >
+                  +
+                </span>
+              </button>
+              <div
+                className="faq-panel grid"
+                style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
+              >
+                <div className="overflow-hidden">
+                  <p className="pt-3 text-sm text-text-muted">{item.a}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
