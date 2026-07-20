@@ -10,6 +10,10 @@ import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// Reviews and the contact form read/write Supabase on every visit — force
+// this route to render per-request instead of being frozen at build time.
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <>
